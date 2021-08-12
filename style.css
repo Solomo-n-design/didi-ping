@@ -1,0 +1,596 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    /*overflow: hidden;*/
+}
+
+.container {
+    /*max-width: 1600px;
+    margin: 0 auto; */
+}
+
+img {
+    width: 100%;
+}
+
+.app-body {
+    display: flex;
+}
+
+.side-nav {
+    height: 100vh;
+    flex: 1;    
+    margin-left: 0px;
+    /*margin-right: 10px; */
+    box-shadow: 0px 0px 6px 0 #919191;
+}
+
+.side-nav > div {
+    padding: 10px;
+}
+
+.side-nav h2 {
+    padding: 0 20px;
+}
+
+.image-holder{
+    flex: 1;
+    padding: 20px;
+}
+
+.side-nav a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    padding: 30px 10px;
+    width: 100%;
+    border-bottom: 1px solid #f3f3f3;
+    font-weight: bold;
+    font-family: inherit;
+}
+
+.side-nav a:hover {
+    background-color: #f3f3f3;
+}
+
+.site-body {
+    flex: 5;
+    width: 20px;
+    /*overflow: hidden;*/
+}
+
+header {
+    padding: 20px;
+    box-shadow: 0 0 6px 0 #ccc;
+}
+
+#wallet-header {
+    padding: 5px;
+}
+
+.dotted-option {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline;
+}
+
+.nav-links ul li a:hover {
+    list-style: none;
+    display: inline;
+    color: #006ad4;
+}
+
+.menu-icon {
+    font-size: 20px;
+}
+
+.nav-links ul li a {
+    padding: 10px;
+    color: #000;
+    font-size: 20px;
+    
+}
+
+.posts {
+    box-shadow: 0 0 6px 0 #ccc;
+    margin: 10px 0  10% 0;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.posted-details {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+
+.bottom-posted-details {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    align-items: center;
+}
+
+.msg-option {
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+section {
+    height: 100vh;
+    overflow: auto;
+    padding: 0 20px;
+    background-color: #f5f5f5;
+}
+.product-text {
+    padding: 20px;
+    font-size: 13px;
+}
+
+.product-name {
+    font-size: 16px;
+}
+
+.first-layer, .second-layer .heading {
+    display: flex;
+    justify-content: space-between;
+    margin: 4% 0;
+}
+
+.hidden-details h3, .hidden-details p {
+    margin-bottom: 20px;
+}
+
+.btn-spot button {
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: rgb(255, 255, 255);
+    background-color: #006ad4;
+    font-family: inherit;
+    padding: 5px;
+    border: none
+}
+
+.extra-functions img {
+    width: 20px;
+}
+
+.extra-functions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hash-tags {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.hash-tags > div {
+    padding: 3px;
+    background-color: #e8f6ff;
+    color: #154574;
+    border-radius: 4px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+.extra-functions >div:first-child {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-heart-o {
+    margin-right: 10px;
+}
+
+
+.rating > div {
+    margin-right: 15px;
+}
+
+.search {
+    display: flex;
+    width: 300px;
+}
+
+.search input {
+    flex: 6;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 5px;
+    border: 1px solid #ccc
+}
+
+.search button {
+    flex: 1;
+    color: rgb(255, 255, 255);
+    background-color: #006ad4;
+    font-family: inherit;
+    padding: 5px;
+    border: none;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.mob-logo {
+    display: none;
+}
+
+.footer {
+    display: none;
+    width: 90%;
+    margin: 0 auto;
+    background-color: transparent;
+}
+
+.fa-heart, .fa-reply {
+    font-size: 16px;
+}
+
+.user-details {
+    display: flex;
+    align-items: center;
+}
+
+.profile-picture {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    border: 1px solid #ccc;
+    margin-right: 5px;
+    overflow: hidden;
+}
+
+.profile-picture img {
+    width: 100%;
+    
+}
+
+
+/* styles for wallet page */
+
+.wallet-title {
+    margin-left: auto;
+    margin-right: auto;
+}
+#wallet-title2 {
+    display: none;
+}
+.wallet-container {
+    box-shadow: 0 0 6px 0 #ccc;
+    margin: 10px 0  10% 0;
+    border-radius: 20px;
+    background-color: #fff;
+    height: 100vh;
+}
+
+#walletCarousel {
+    color: white;
+    max-width: 400px;
+    min-width: 150px;
+    height: 230px;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: darkblue;
+    padding-top: 30px;
+    border-style: hidden;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 10px;
+}
+#walletCarousel sub {
+    margin-left: 5px;
+    padding: 1px;
+    font-size: 8px;
+    color: blue;
+    background: white;
+}
+
+#walletCarousel a {
+    color: white;
+}
+
+.wallet-address {
+    font-size: 14px;
+}
+
+.wallet-address .address {
+    font-size: 12px;
+    margin-top: -10px;
+}
+.crypto {
+    font-size: 17px;
+    margin-top: -20px;
+}
+.balance {
+    margin-bottom: 45px;
+}
+
+
+.carousel-indicators {
+    bottom: -30px;
+}
+
+.carousel-indicators li {
+    height: 10px;
+    width: 10px;
+    margin-right: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: darkblue;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.carousel-indicators li.active {
+    background-color: darkblue;
+}
+
+.f-r {
+    float: right;
+    margin-right: 15px;
+}
+.f-l {
+    float: left;
+    margin-left: 15px;
+}
+.c-l {
+    clear: left;
+}
+
+#buttons {
+    margin-left: 20px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    max-width: 400px;
+    min-width: 120px;
+
+}
+
+
+
+#btn-deposit, #btn-withdraw {
+    width: 48%;
+}
+
+#buttons-small {
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 5px;
+    max-width: 330px;
+    min-width: 190px;
+}
+
+#buttons-small div {
+    margin-right: 40px;
+    margin-bottom: 10px;
+}
+#buttons-small a {
+    margin-bottom: 10px;
+}
+#buttons-small p {
+    margin-top: -10px;
+    font-size: 12px;
+}
+
+.wallet-1 {
+    margin-left: 20px;
+    margin-right: 20px;
+    flex: 2;
+}
+
+#transactions {
+    margin-top: 30px;
+    flex: 1.5;
+    padding: 10px;
+}
+#transactions h5 {
+    margin-bottom: -30px;
+}
+#transactions a {
+    font-size: 12px;
+    color: blue;
+    margin-bottom: 20px;
+}
+
+#transactions img {
+    max-width: 70px;
+    max-height: 70px;
+}
+
+#transactions p {
+    font-size: 10px;
+}
+
+#transactions strong {
+    font-size: 14px;
+    font-weight: 550;
+}
+
+#transactions sub {
+    color: white;
+    background: darkblue;
+    padding: 2px;
+}
+
+.date {
+    color: gray;
+    margin-top: -2px;
+}
+
+.debit {
+    color: red;
+}
+
+.credit {
+    color: green;
+}
+
+.btc {
+    margin-top: -15px;
+}
+
+
+@media(min-width: 769px) {
+    .product-text {
+        font-size: 15px;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .posted-details-1 {
+        display: none;
+    }
+    .posted-details-2 {
+        display: flex;
+        padding: 0;
+    }
+}
+
+@media(max-width: 769px) {
+
+    #wallet-header {
+        display: none;
+    }
+    #wallet-title2 {
+        display: block;
+        padding-top: 30px;
+        padding-left: 5px;
+        padding-bottom: 10px;
+        margin: 20px;
+    }
+
+    #wallet-title2 a {
+        height: 1px;
+        width: 50px;
+        color: black;
+    }
+    #walletCarousel {
+        margin-top: -10px;
+    }
+    .side-nav {
+        display: none;
+    }
+
+    .posted-details-2 {
+        display: none;
+    }
+    
+    .hid-mob .fa-comment-o {
+        display: none
+    }
+
+    .search {
+        display: none;
+    }
+
+    .mob-logo {
+        display: block;
+        font-family: cursive;
+    }
+
+    .mob-logo h2 {
+        font-size: 19px;
+    }
+
+    .extra-functions {
+        margin-bottom: 40px;
+    }
+
+    .footer {
+        display: block;
+        position: sticky;
+        left: 0;
+        bottom: 0;
+        padding: 10px 0;
+    }
+
+    .mobile-footer {
+        /* border: 1px solid red; */
+        position: relative;
+        background-color: #fff;
+        padding: 10 30px;  
+        height: 50px;
+        box-shadow: 0 0 6px 0 #ccc;
+        border-radius: 20px;
+    }
+
+    .action-home {
+        left: 20px;
+        top: 10px;
+        position: absolute;
+        font-size: 19px;
+    }
+
+    .action-search {
+        left: 80px;
+        top: 10px;
+        position: absolute;
+        font-size: 19px;
+    }
+
+    .action-btn {
+        left: 137px;
+        top: -10px;
+        height: 50px;
+        width: 50px;
+        border-radius: 100%;
+        position: absolute;
+        font-size: 25px;
+        box-shadow: 0 0 6px 0 #ccc;
+        text-align: center;
+        padding-top:  10px;
+        background: #fff;
+    }
+
+    .action-card {
+        left: 230px;
+        top: 10px;
+        position: absolute;
+        font-size: 19px;
+    }
+
+    .action-com {
+        left: 300px;
+        top: 10px;
+        position: absolute;
+        font-size: 19px;
+    }
+
+    body {
+        overflow: auto;
+    }
+
+    .main-header {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
